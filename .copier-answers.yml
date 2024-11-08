@@ -1,0 +1,61 @@
+---
+## Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
+_commit: v2.7.4
+_src_path: gh:kc-workspace/asdf-plugin-template.git
+addon_yaml:
+    archive: false
+    checksum: false
+    download: true
+    fetch: true
+    git: false
+    github: true
+    gpg: false
+    help: true
+    install: true
+    package: false
+    python: false
+    system: true
+    tags: true
+    version: false
+app_desc: A client that provides a simple interface that automates access to the JFrog
+    products.
+app_name: jf
+app_repo: https://github.com/jfrog/jfrog-cli
+app_type: standalone
+app_website: https://www.jfrog.com/confluence/display/CLI/JFrog+CLI
+archive_enabled: false
+checksum_enabled: false
+custom_bin_paths: bin
+custom_non_stable_version: (-src|-dev|-latest|-stm|[-\.]rc|-alpha|-beta|[-\.]pre|-next|snapshot|master)
+custom_require_commands: ''
+download_url: https://releases.jfrog.io/artifactory/jfrog-cli/v2-jf/{version}/jfrog-cli-{os}-{arch}/jf
+gpg_enabled: false
+install_map_enabled: true
+install_map_method: move
+install_map_yaml:
+    jf: bin/jf
+package_enabled: false
+plugin_author: Kamontat Chantrachirathumrong
+plugin_name: asdf-jf
+plugin_org: kc-workspace
+plugin_repo: https://github.com/kc-workspace/asdf-jf.git
+source_enabled: false
+sys_arch_enabled: true
+sys_arch_yaml:
+    aarch64*: arm64
+    armv5*: arm64
+    armv6*: arm64
+    armv7*: arm64
+    i386: '386'
+    i686: amd64
+    powerpc64le: ppc64le
+    ppc64le: ppc64le
+    x86: '386'
+    x86_64: amd64
+sys_ext_enabled: false
+sys_os_enabled: true
+sys_os_yaml:
+    darwin: mac
+test_cmd_args: --version
+version_file_enabled: false
+version_prefix: v
